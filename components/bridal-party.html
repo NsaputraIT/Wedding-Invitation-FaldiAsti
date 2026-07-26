@@ -1,0 +1,240 @@
+<!--- Bridesmaids & Groomsmen start -->
+<div class="container-fluid team position-relative py-5">
+    <div class="position-absolute" style="bottom: -80px; right: 0;">
+        <img src="assets/img/tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+    <div class="position-absolute" style="bottom: -90px; left: 0; transform: rotate(150deg);">
+        <img src="assets/img/tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+    <div class="position-absolute" style="top: -100px; right: 0;">
+        <img src="assets/img/tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
+        <img src="assets/img/tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+    <div class="container py-5">
+        <div class="mb-5 text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h1 class="display-2 text-dark">{{bridalParty.title}}</h1>
+            <p class="fs-5 text-dark">{{bridalParty.description}}</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.bridesmaids.0.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.bridesmaids.0.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.bridesmaids.0.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.bridesmaids.1.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.bridesmaids.1.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.bridesmaids.1.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.bridesmaids.2.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.bridesmaids.2.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.bridesmaids.2.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.bridesmaids.3.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.bridesmaids.3.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.bridesmaids.3.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.groomsmen.0.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.groomsmen.0.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.groomsmen.0.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.groomsmen.1.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.groomsmen.1.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.groomsmen.1.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.groomsmen.2.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.groomsmen.2.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.groomsmen.2.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="team-img-main">
+                            <img src="{{bridalParty.groomsmen.3.image}}" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-img-bg position-absolute" style="bottom: -40px; right: -120px; transform: rotate(-30deg); z-index: 1;">
+                            <img src="{{bridalParty.decorativeImage}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="text-white display-6 mb-1">{{bridalParty.groomsmen.3.name}}</h5>
+                            <h5 class="text-white fs-5 mb-0">{{bridalParty.groomsmen.3.role}}</h5>
+                        </div>
+                    </div>
+                    <div class="team-social d-flex flex-column">
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.facebook}}"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.twitter}}"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-light-outline-0 mb-2" href="{{socialLinks.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-light-outline-0" href="{{socialLinks.instagram}}"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bridesmaids & Groomsmen End -->

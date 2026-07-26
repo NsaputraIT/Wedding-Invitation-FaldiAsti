@@ -1,0 +1,65 @@
+<!-- Wedding Timeline start -->
+<div class="container-fluid wedding-timeline bg-secondary position-relative overflow-hidden py-5" id="weddingTimeline">
+    <div class="position-absolute" style="top: 50%; left: -100px; transform: translateY(-50%); opacity: 0.5;">
+        <img src="assets/img/wedding-bg.png" class="img-fluid" alt="">
+    </div>
+    <div class="position-absolute" style="top: 50%; right: -160px; transform: translateY(-50%); opacity: 0.5; rotate: 335deg;">
+        <img src="assets/img/wedding-bg.png" class="img-fluid" alt="">
+    </div>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 text-white">{{timeline.title}}</h1>
+        </div>
+        <div class="position-relative wedding-content">
+            <div class="row g-4">
+                <div class="col-6 col-md-6 col-xl-3 border border-bottom-0">
+                    <div class="text-center p-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="mb-4 p-3 d-inline-flex">
+                            <i class="{{timeline.items.0.icon}} text-primary fa-3x"></i>
+                        </div>
+                        <p class="text-primary">{{timeline.items.0.time}}</p>
+                        <h3 class="text-dark">{{timeline.items.0.title}}</h3>
+                        <p class="text-dark">{{timeline.items.0.description}}</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-xl-3 border border-top-0 border-start-0">
+                    <div class="text-center p-3 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="mb-4 p-3 d-inline-flex">
+                            <i class="{{timeline.items.1.icon}} text-primary fa-3x"></i>
+                        </div>
+                        <p class="text-primary">{{timeline.items.1.time}}</p>
+                        <h3 class="text-dark">{{timeline.items.1.title}}</h3>
+                        <p class="text-dark">{{timeline.items.1.description}}</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-xl-3 border border-bottom-0 border-end-0">
+                    <div class="text-center p-3 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="mb-4 p-3 d-inline-flex">
+                            <i class="{{timeline.items.2.icon}} text-primary fa-3x"></i>
+                        </div>
+                        <p class="text-primary">{{timeline.items.2.time}}</p>
+                        <h3 class="text-dark">{{timeline.items.2.title}}</h3>
+                        <p class="text-dark">{{timeline.items.2.description}}</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-xl-3 border border-top-0">
+                    <div class="text-center p-3 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="mb-4 p-3 d-inline-flex">
+                            <i class="{{timeline.items.3.icon}} text-primary fa-3x"></i>
+                        </div>
+                        <p class="text-primary">{{timeline.items.3.time}}</p>
+                        <h3 class="text-dark">{{timeline.items.3.title}}</h3>
+                        <p class="text-dark">{{timeline.items.3.description}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute heart-circle " style="bottom: 0; left: -18px;">
+                <div class="border border-2 border-primary rounded-circle p-1 bg-secondary"></div>
+            </div>
+            <div class="position-absolute heart-circle" style="top: 18px; right: -17px;">
+                <div class="border border-2 border-primary rounded-circle p-1 bg-secondary"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wedding Timeline End -->

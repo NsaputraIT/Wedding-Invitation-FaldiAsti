@@ -1,0 +1,414 @@
+{
+  "brand": {
+    "name": "Mr & Mrs",
+    "tagline": "Mr<strong class=\"text-secondary\">&amp;</strong>Mrs"
+  },
+
+  "site": {
+    "pageTitle": "Mr & Mrs - Wedding Bootstrap Template",
+    "copyrightHolder": "Your Site Name",
+    "copyrightTagline": "All right reserved.",
+    "designCredit": {
+      "designedBy": "HTML Codex",
+      "designedByUrl": "https://htmlcodex.com",
+      "distributedBy": "ThemeWagon",
+      "distributedByUrl": "https://themewagon.com"
+    }
+  },
+
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#weddingHome" },
+      { "label": "About", "href": "#weddingAbout" },
+      { "label": "Story", "href": "#weddingStory" },
+      { "label": "Timeline", "href": "#weddingTimeline" },
+      { "label": "Gallery", "href": "#weddingGallery" },
+      { "label": "RSVP", "href": "#weddingRsvp" }
+    ],
+    "ctaButton": {
+      "label": "Book Attendance",
+      "href": "#weddingRsvp"
+    }
+  },
+
+  "hero": {
+    "slides": [
+      {
+        "image": "assets/img/carousel-1.jpg",
+        "alt": "Image"
+      },
+      {
+        "image": "assets/img/carousel-2.jpg",
+        "alt": "Image"
+      },
+      {
+        "image": "assets/img/carousel-3.png",
+        "alt": "Image",
+        "extraClass": "bg-secondary"
+      }
+    ],
+    "heading": "WE ARE GETTING MARRIED",
+    "coupleDisplay": "Evelyn <i class=\"fa fa-heart text-primary\"></i> Anthony",
+    "date": "June 28 2024",
+    "cta": {
+      "label": "RSVP Now",
+      "href": "#"
+    }
+  },
+
+  "couple": {
+    "bride": {
+      "firstName": "Evelyn",
+      "fullName": "Evelyn",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "image": "assets/img/bride.jpg"
+    },
+    "groom": {
+      "firstName": "Anthony",
+      "fullName": "Anthony",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "image": "assets/img/Groom.jpg"
+    }
+  },
+
+  "hello": {
+    "title": "Hello!",
+    "subtitle": "We invite you to celebrate our wedding"
+  },
+
+  "about": {
+    "title": "About Us",
+    "tagline": "We Make Your Every Moment",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "image": "assets/img/about-1.jpg",
+    "decorativeImage": "assets/img/bg-flower.png",
+    "ctaButton": {
+      "label": "Read More",
+      "href": "#"
+    },
+    "contactLabel": "Call Us Anytime",
+    "tabs": {
+      "brideLabel": "Bride Info",
+      "groomLabel": "Groom info"
+    }
+  },
+
+  "wedding": {
+    "sectionTitle": "We Are Getting Married",
+    "dateLong": "June 28, 2024",
+    "dateShort": "June 28 2024",
+    "dateAlt": "28. June 2024",
+    "time": "at 7 o'clock in the evening",
+    "venue": {
+      "name": "Niloy Hotel",
+      "addressLine1": "123 West 23th Street, NY",
+      "addressLine2": "123 ranking Street, New York.",
+      "full": "Niloy Hotel New York , 123 West 23th Street, NY"
+    },
+    "rsvpDeadline": "June 25, 2024",
+    "countdownLabels": {
+      "days": "Days",
+      "hours": "Hours",
+      "mins": "Mins",
+      "secs": "Secs"
+    },
+    "ctaButton": {
+      "label": "Book Your Attendance",
+      "href": "#"
+    }
+  },
+
+  "contact": {
+    "phone": "+123 456 7890",
+    "email": "info@example.com",
+    "altPhone": "(+012) 3456 7890 123"
+  },
+
+  "story": {
+    "label": "Story",
+    "title": "Our Love Story",
+    "items": [
+      {
+        "title": "First Meet",
+        "date": "01 Jan 2050",
+        "description": "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        "image": "assets/img/story-1.jpg",
+        "imageSide": "left"
+      },
+      {
+        "title": "First Date",
+        "date": "01 Jan 2050",
+        "description": "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        "image": "assets/img/story-2.jpg",
+        "imageSide": "right"
+      },
+      {
+        "title": "Proposal",
+        "date": "01 Jan 2050",
+        "description": "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        "image": "assets/img/story-3.jpg",
+        "imageSide": "left"
+      },
+      {
+        "title": "Enagagement",
+        "date": "01 Jan 2050",
+        "description": "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        "image": "assets/img/story-4.jpg",
+        "imageSide": "right"
+      }
+    ]
+  },
+
+  "timeline": {
+    "title": "Wedding Planing Timeline",
+    "items": [
+      {
+        "title": "Dinner",
+        "time": "10:00AM - 11:00AM",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        "icon": "fas fa-menorah",
+        "borderClasses": "border border-bottom-0"
+      },
+      {
+        "title": "Photoshoot",
+        "time": "10:00AM - 11:00AM",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        "icon": "fas fa-photo-video",
+        "borderClasses": "border border-top-0 border-start-0"
+      },
+      {
+        "title": "Reception",
+        "time": "10:00AM - 11:00AM",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        "icon": "fas fa-dungeon",
+        "borderClasses": "border border-bottom-0 border-end-0"
+      },
+      {
+        "title": "Ceremony",
+        "time": "10:00AM - 11:00AM",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        "icon": "fas fa-ring",
+        "borderClasses": "border border-top-0"
+      }
+    ]
+  },
+
+  "gallery": {
+    "title": "Wedding Gallery",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+    "items": [
+      {
+        "image": "assets/img/gallery-1.jpg",
+        "lightbox": "Gallery-1",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-2.jpg",
+        "lightbox": "Gallery-2",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-3.jpg",
+        "lightbox": "Gallery-3",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-4.jpg",
+        "lightbox": "Gallery-4",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-5.jpg",
+        "lightbox": "Gallery-5",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-6.jpg",
+        "lightbox": "Gallery-6",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-7.jpg",
+        "lightbox": "Gallery-7",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      },
+      {
+        "image": "assets/img/gallery-8.jpg",
+        "lightbox": "Gallery-8",
+        "title": "Wedding on the beach",
+        "date": "June 28, 2024"
+      }
+    ],
+    "viewAllButton": {
+      "label": "View All",
+      "href": "#"
+    },
+    "decorativeImage": "assets/img/tamp-bg-1.png"
+  },
+
+  "bridalParty": {
+    "title": "Bridesmaids & Groomsmen",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting Ipsum is simply dummy text of the printing and typesetting Ipsum is simply dummy text of the printing and typesetting",
+    "decorativeImage": "assets/img/team-1-bg.png",
+    "bridesmaids": [
+      {
+        "name": "Amelia Alex",
+        "role": "Bridesmaid",
+        "image": "assets/img/bridesmaid-1.png"
+      },
+      {
+        "name": "Amelia Alex",
+        "role": "Bridesmaid",
+        "image": "assets/img/bridesmaid-team-2.png"
+      },
+      {
+        "name": "Amelia Alex",
+        "role": "Bridesmaid",
+        "image": "assets/img/bridesmaid-3.png"
+      },
+      {
+        "name": "Amelia Alex",
+        "role": "Bridesmaid",
+        "image": "assets/img/bridesmaid-4.png"
+      }
+    ],
+    "groomsmen": [
+      {
+        "name": "David John",
+        "role": "Groomsmen",
+        "image": "assets/img/Groomsmen-1.png"
+      },
+      {
+        "name": "David John",
+        "role": "Groomsmen",
+        "image": "assets/img/Groomsmen-2.png"
+      },
+      {
+        "name": "David John",
+        "role": "Groomsmen",
+        "image": "assets/img/Groomsmen-3.png"
+      },
+      {
+        "name": "David John",
+        "role": "Groomsmen",
+        "image": "assets/img/Groomsmen-4.png"
+      }
+    ]
+  },
+
+  "socialLinks": {
+    "facebook": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+
+  "rsvp": {
+    "title": "RSVP Form",
+    "headerNote": "Kindly respond by June 25, 2024 we look forward to celebrating with you!",
+    "fields": [
+      {
+        "type": "text",
+        "name": "firstName",
+        "label": "First Name",
+        "placeholder": "First Name",
+        "width": "col-lg-6"
+      },
+      {
+        "type": "text",
+        "name": "lastName",
+        "label": "Last Name",
+        "placeholder": "Last Name",
+        "width": "col-lg-6"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "label": "Enter Your Email",
+        "placeholder": "Enter Your Email",
+        "width": "col-lg-6"
+      },
+      {
+        "type": "text",
+        "name": "phone",
+        "label": "Enter Your Phone",
+        "placeholder": "Enter Your Phone",
+        "width": "col-lg-6"
+      },
+      {
+        "type": "select",
+        "name": "guestCount",
+        "label": "Number Of Guests",
+        "placeholder": "Number Of Guests",
+        "options": ["Only Me", "02 Guests", "03 Guests", "04 Guests"],
+        "width": "col-12"
+      },
+      {
+        "type": "textarea",
+        "name": "message",
+        "label": "Message",
+        "placeholder": "Message",
+        "width": "col-12"
+      }
+    ],
+    "attendanceQuestion": "Will you be attending?",
+    "attendanceOptions": [
+      { "label": "Accepts With Pleasure!", "value": "accepting" },
+      { "label": "Declines With Regret", "value": "declining" }
+    ],
+    "submitButton": {
+      "label": "Submit Now"
+    }
+  },
+
+  "footer": {
+    "linksHeader": "Links",
+    "links": [
+      { "label": "About", "href": "#" },
+      { "label": "Gallery", "href": "#" },
+      { "label": "Story", "href": "#" },
+      { "label": "Timeline", "href": "#" },
+      { "label": "RSVP", "href": "#" },
+      { "label": "Contact Us", "href": "#" },
+      { "label": "Wedding-date", "href": "#" }
+    ],
+    "description": "Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tempor dui, non consectetur enim. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    "followUsHeader": "Follow Us",
+    "socialHeader": "Contact Us"
+  },
+
+  "infoCards": [
+    {
+      "icon": null,
+      "title": "Call Us Now",
+      "value": "+123 456 7890",
+      "type": "phone"
+    },
+    {
+      "icon": null,
+      "title": "When",
+      "value": "28. June 2024. at 7 o'clock in the evening",
+      "type": "text"
+    },
+    {
+      "icon": null,
+      "title": "Where",
+      "value": "Niloy Hotel, 123 ranking Street, New York.",
+      "type": "text"
+    }
+  ],
+
+  "animation": {
+    "defaultDelay": "0.1s",
+    "pattern": "incrementing"
+  }
+}
