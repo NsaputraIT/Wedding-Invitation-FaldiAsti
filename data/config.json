@@ -1,18 +1,18 @@
 {
   "brand": {
-    "name": "Mr & Mrs",
-    "tagline": "Mr<strong class=\"text-secondary\">&amp;</strong>Mrs"
+    "name": "Faldi & Asti",
+    "tagline": "Faldi <strong class=\"text-secondary\">&amp;</strong> Asti"
   },
 
   "site": {
-    "pageTitle": "Mr & Mrs - Wedding Bootstrap Template",
-    "copyrightHolder": "Your Site Name",
-    "copyrightTagline": "All right reserved.",
+    "pageTitle": "Walimatul Urs | Faldi & Asti",
+    "copyrightHolder": "Faldi & Asti",
+    "copyrightTagline": "Walimatul Urs",
     "designCredit": {
-      "designedBy": "HTML Codex",
-      "designedByUrl": "https://htmlcodex.com",
-      "distributedBy": "ThemeWagon",
-      "distributedByUrl": "https://themewagon.com"
+      "designedBy": "",
+      "designedByUrl": "#",
+      "distributedBy": "",
+      "distributedByUrl": "#"
     }
   },
 
@@ -26,7 +26,7 @@
       { "label": "RSVP", "href": "#weddingRsvp" }
     ],
     "ctaButton": {
-      "label": "Book Attendance",
+      "label": "Kirim Ucapan & Doa",
       "href": "#weddingRsvp"
     }
   },
@@ -47,41 +47,41 @@
         "extraClass": "bg-secondary"
       }
     ],
-    "heading": "WE ARE GETTING MARRIED",
-    "coupleDisplay": "Evelyn <i class=\"fa fa-heart text-primary\"></i> Anthony",
-    "date": "June 28 2024",
+    "heading": "Walimatul Urs",
+    "coupleDisplay": "Faldi Nur Rochim <i class=\"fa fa-heart text-primary\"></i> Asti Dwi Liyana",
+    "date": "Jumat Pon, 14 Agustus 2026",
     "cta": {
-      "label": "RSVP Now",
-      "href": "#"
+      "label": "Buka Undangan",
+      "href": "#weddingAbout"
     }
   },
 
   "couple": {
     "bride": {
-      "firstName": "Evelyn",
-      "fullName": "Evelyn",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "firstName": "Asti Dwi Liyana",
+      "fullName": "Asti Dwi Liyana",
+      "description": "Putri Bpk Ratno & Ibu Yugi Purwati (Almh), Karangtalun, Cilacap Utara.",
+      "shortDescription": "Putri Bpk Ratno & Ibu Yugi Purwati (Almh), Karangtalun, Cilacap Utara.",
       "image": "assets/img/bride.jpg"
     },
     "groom": {
-      "firstName": "Anthony",
-      "fullName": "Anthony",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "firstName": "Faldi Nur Rochim",
+      "fullName": "Faldi Nur Rochim",
+      "description": "Putra Bpk Samingun & Ibu Mistem, Genting, Adipala.",
+      "shortDescription": "Putra Bpk Samingun & Ibu Mistem, Genting, Adipala.",
       "image": "assets/img/Groom.jpg"
     }
   },
 
   "hello": {
-    "title": "Hello!",
-    "subtitle": "We invite you to celebrate our wedding"
+    "title": "Assalamualaikum Warahmatullahi Wabarakatuh",
+    "subtitle": "Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan mengharap ridho Allah SWT kami bermaksud menyelenggarakan Walimatul 'Urs putra-putri kami."
   },
 
   "about": {
-    "title": "About Us",
-    "tagline": "We Make Your Every Moment",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "title": "Assalamualaikum WR. WB.",
+    "tagline": "Dengan segala hormat dan kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk memberikan doa restu serta menghadiri acara Walimatul 'Urs putra-putri kami.",
+    "description": "Kami mengundang Bapak/Ibu/Saudara/i untuk memberikan doa restu serta menghadiri acara Walimatul 'Urs putra-putri kami yang Insya Allah akan diselenggarakan pada:",
     "image": "assets/img/about-1.jpg",
     "decorativeImage": "assets/img/bg-flower.png",
     "ctaButton": {
@@ -96,26 +96,26 @@
   },
 
   "wedding": {
-    "sectionTitle": "We Are Getting Married",
-    "dateLong": "June 28, 2024",
-    "dateShort": "June 28 2024",
-    "dateAlt": "28. June 2024",
-    "time": "at 7 o'clock in the evening",
+    "sectionTitle": "Walimatul 'Urs",
+    "dateLong": "Jum'at Pon, 14 Agustus 2026",
+    "dateShort": "14 Agustus 2026",
+    "dateAlt": "14 Agustus 2026",
+    "time": "09.00 WIB sampai selesai",
     "venue": {
-      "name": "Niloy Hotel",
-      "addressLine1": "123 West 23th Street, NY",
-      "addressLine2": "123 ranking Street, New York.",
-      "full": "Niloy Hotel New York , 123 West 23th Street, NY"
+      "name": "Tasyakuran",
+      "addressLine1": "Jl. Jati RT 03 RW 08",
+      "addressLine2": "Karangtalun, Cilacap Utara",
+      "full": "Jl. Jati RT 03 RW 08, Karangtalun, Cilacap Utara"
     },
-    "rsvpDeadline": "June 25, 2024",
+    "rsvpDeadline": "14 Agustus 2026",
     "countdownLabels": {
-      "days": "Days",
-      "hours": "Hours",
-      "mins": "Mins",
-      "secs": "Secs"
+      "days": "Hari",
+      "hours": "Jam",
+      "mins": "Menit",
+      "secs": "Detik"
     },
     "ctaButton": {
-      "label": "Book Your Attendance",
+      "label": "Kirim Ucapan & Doa Restu",
       "href": "#"
     }
   },
@@ -381,7 +381,7 @@
       { "label": "Contact Us", "href": "#" },
       { "label": "Wedding-date", "href": "#" }
     ],
-    "description": "Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tempor dui, non consectetur enim. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    "description": "Hormat Kami, Bapak Sudiyo & Ibu Sinah",
     "followUsHeader": "Follow Us",
     "socialHeader": "Contact Us"
   },
@@ -389,20 +389,20 @@
   "infoCards": [
     {
       "icon": null,
-      "title": "Call Us Now",
-      "value": "+123 456 7890",
-      "type": "phone"
-    },
-    {
-      "icon": null,
-      "title": "When",
-      "value": "28. June 2024. at 7 o'clock in the evening",
+      "title": "Akad Nikah",
+      "value": "09.00 WIB - Selesai",
       "type": "text"
     },
     {
       "icon": null,
-      "title": "Where",
-      "value": "Niloy Hotel, 123 ranking Street, New York.",
+      "title": "Tanggal",
+      "value": "Jum'at Pon, 14 Agustus 2026",
+      "type": "text"
+    },
+    {
+      "icon": null,
+      "title": "Lokasi",
+      "value": "Jl. Jati RT 03 RW 08, Karangtalun, Cilacap Utara",
       "type": "text"
     }
   ],

@@ -1,3 +1,35 @@
+/*** Islamic Gold Theme — Bootstrap Variable Overrides ***/
+:root {
+    --bs-primary: #C8A24A;
+    --bs-primary-rgb: 200, 162, 74;
+    --bs-secondary: #243B7A;
+    --bs-secondary-rgb: 36, 59, 122;
+    --bs-dark: #4B3425;
+    --bs-dark-rgb: 75, 52, 37;
+    --bs-light: #F8F5EE;
+    --bs-light-rgb: 248, 245, 238;
+    --bs-white: #FFFFFF;
+    --bs-body-bg: #F8F5EE;
+}
+
+body {
+    background-color: #F8F5EE;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.text-dark {
+    color: #4B3425 !important;
+}
+
+.text-primary {
+    color: #C8A24A !important;
+}
+
+.team .team-item .team-content h5,
+.team .team-item .team-content h5.text-white {
+    color: #C8A24A !important;
+}
 
 /*** Spinner Start ***/
 #spinner {
