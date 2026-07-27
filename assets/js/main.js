@@ -30,8 +30,54 @@
             }
         }
     });
-    
-    
+
+
+    // Active nav link on scroll via IntersectionObserver
+    (function() {
+        if (!window.IntersectionObserver) return;
+
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        if (!navLinks.length) return;
+        var homeLink = document.querySelector('.navbar-nav a[href="#weddingHome"]');
+
+        var sections = [];
+        var hashToLink = {};
+        navLinks.forEach(function(link) {
+            var hash = link.getAttribute('href');
+            if (hash && hash !== '#') {
+                hashToLink[hash] = link;
+                if (hash !== '#weddingHome') {
+                    var el = document.querySelector(hash);
+                    if (el) sections.push(el);
+                }
+            }
+        });
+        if (!sections.length) return;
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(function(l) { l.classList.remove('active'); });
+                    var link = hashToLink['#' + entry.target.getAttribute('id')];
+                    if (link) link.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-10% 0px -75% 0px' });
+
+        sections.forEach(function(section) { observer.observe(section); });
+
+        function updateHomeOnScroll() {
+            if (!homeLink || !sections[0]) return;
+            if (sections[0].getBoundingClientRect().top > window.innerHeight * 0.25) {
+                navLinks.forEach(function(l) { l.classList.remove('active'); });
+                homeLink.classList.add('active');
+            }
+        }
+        window.addEventListener('scroll', updateHomeOnScroll, { passive: true });
+        updateHomeOnScroll();
+    })();
+
+
    // Back to top button
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {

@@ -63,6 +63,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .btn {
     font-weight: 600;
     transition: .5s;
+    border-radius: 50px;
 }
 
 .btn-square {
@@ -161,6 +162,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
         border-top: none !important;
     }
 }
+
+@media (max-width: 767px) {
+    .navbar .navbar-brand {
+        margin: 0 auto;
+    }
+    .navbar .navbar-collapse {
+        display: none !important;
+    }
+}
 /*** Navbar End ***/
 
 /*** Carousel Start ***/
@@ -219,6 +229,28 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
     border-color: var(--bs-primary);
     border-right: 15px solid var(--bs-primary);
     border-left: 15px solid var(--bs-primary);
+}
+
+/* =========================
+   HERO - DESKTOP
+   >= 768px
+   Geser konten ke kanan
+========================= */
+@media (min-width: 768px) {
+    .carousel-caption .animated {
+        transform: translateX(180px);
+    }
+}
+
+/* =========================
+   HERO - MOBILE
+   <= 767px
+   Geser konten ke atas
+========================= */
+@media (max-width: 767px) {
+    .carousel-caption .animated {
+        transform: translateY(-150px);
+    }
 }
 /*** Carousel End ***/
 
