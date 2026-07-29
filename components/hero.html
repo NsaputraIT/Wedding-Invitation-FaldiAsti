@@ -25,9 +25,26 @@
                             </br> 
                             {{couple.groom.firstName}}
                         </h1>
+
+                        <!-- <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="{{hero.cta.href}}">
+                                Turut Mengundang :<br>
+                                <span class="fs-3 fw-bold" id="guest-name"></span>
+                            </a>
+                        </div> -->
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="{{hero.cta.href}}">{{hero.cta.label}}</a>
+                            <a class="btn btn-primary-outline-0 rounded-pill py-2 px-4"
+                            style="
+                                background-color: rgba(225, 225, 225, 0.5);
+                                color: #4B3425 !important;
+                                border: 1px solid #C8A24A;
+                            "
+                            href="{{hero.cta.href}}">
+                                <i>Turut Mengundang :</i><br>
+                                <span class="fs-3 fw-bold" id="guest-name"></span>
+                            </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -37,3 +54,13 @@
     </div>
 </div>
 <!-- Carousel End -->
+
+<script>
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    var guest = params.get('to');
+    if (guest) {
+        document.getElementById('guest-name').textContent = decodeURIComponent(guest);
+    }
+})();
+</script>
