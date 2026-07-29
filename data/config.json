@@ -165,90 +165,50 @@
   },
 
   "timeline": {
-    "title": "Wedding Planing Timeline",
+    "title": "Susunan Acara",
     "items": [
       {
-        "title": "Dinner",
-        "time": "10:00AM - 11:00AM",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-        "icon": "fas fa-menorah",
-        "borderClasses": "border border-bottom-0"
+        "title": "Akad Nikah",
+        "time": "09.00 WIB",
+        "description": "KUA Cilacap Utara, Jl. Ketapang, Gumilir, Cilacap Utara",
+        "icon": "fas fa-ring"
       },
       {
-        "title": "Photoshoot",
-        "time": "10:00AM - 11:00AM",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-        "icon": "fas fa-photo-video",
-        "borderClasses": "border border-top-0 border-start-0"
-      },
-      {
-        "title": "Reception",
-        "time": "10:00AM - 11:00AM",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-        "icon": "fas fa-dungeon",
-        "borderClasses": "border border-bottom-0 border-end-0"
-      },
-      {
-        "title": "Ceremony",
-        "time": "10:00AM - 11:00AM",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-        "icon": "fas fa-ring",
-        "borderClasses": "border border-top-0"
+        "title": "Tasyakuran",
+        "time": "11.00 WIB - Selesai",
+        "description": "Jln. Jati RT 03 RW 08, Karangtalun, Cilacap Utara",
+        "icon": "fas fa-glass-cheers"
       }
     ]
   },
 
   "gallery": {
     "title": "Wedding Gallery",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+    "description": "Setiap momen dalam perjalanan cinta kami adalah anugerah yang tak ternilai. Dalam setiap bingkai foto tersimpan cerita, tawa, dan doa yang menjadi saksi indahnya ikatan kami. Terima kasih telah menjadi bagian dari kebahagiaan ini.",
     "items": [
       {
-        "image": "assets/img/gallery-1.jpg",
+        "image": "assets/gallery/foto-galery_FaldiAsti-1.jpeg",
         "lightbox": "Gallery-1",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
+        "title": "Foto Prewedding Faldi & Asti",
+        "date": ""
       },
       {
-        "image": "assets/img/gallery-2.jpg",
+        "image": "assets/gallery/foto-galery_FaldiAsti-2.jpeg",
         "lightbox": "Gallery-2",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
+        "title": "Foto Prewedding Faldi & Asti",
+        "date": ""
       },
       {
-        "image": "assets/img/gallery-3.jpg",
+        "image": "assets/gallery/foto-galery_FaldiAsti-3.jpeg",
         "lightbox": "Gallery-3",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
+        "title": "Foto Prewedding Faldi & Asti",
+        "date": ""
       },
       {
-        "image": "assets/img/gallery-4.jpg",
+        "image": "assets/gallery/foto-galery_FaldiAsti-4.jpeg",
         "lightbox": "Gallery-4",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
-      },
-      {
-        "image": "assets/img/gallery-5.jpg",
-        "lightbox": "Gallery-5",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
-      },
-      {
-        "image": "assets/img/gallery-6.jpg",
-        "lightbox": "Gallery-6",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
-      },
-      {
-        "image": "assets/img/gallery-7.jpg",
-        "lightbox": "Gallery-7",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
-      },
-      {
-        "image": "assets/img/gallery-8.jpg",
-        "lightbox": "Gallery-8",
-        "title": "Wedding on the beach",
-        "date": "June 28, 2024"
+        "title": "Foto Prewedding Faldi & Asti",
+        "date": ""
       }
     ],
     "viewAllButton": {
@@ -316,7 +276,7 @@
   },
 
   "rsvp": {
-    "title": "RSVP Form",
+    "title": "Bank Account Number",
     "headerNote": "Kindly respond by June 25, 2024 we look forward to celebrating with you!",
     "fields": [
       {

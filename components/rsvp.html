@@ -1,130 +1,112 @@
-<!-- RSVP Form Start -->
+<!-- Bank Account Start -->
 <div class="container-fluid RSVP-form py-5" id="weddingRsvp">
     <div class="container py-5">
         <div class="mb-5 text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px;">
             <h1 class="display-2 text-primary">{{rsvp.title}}</h1>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-10">
+            <div class="col-lg-10">
                 <div class="p-5 border-secondary position-relative" style="border-style: double;">
-                    <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2 wow fadeIn" data-wow-delay="0.1s" style="width: 75%; border-style: double; top: 0; left: 50%; transform: translate(-50%, -50%);">
-                        {{rsvp.headerNote}}
+                    <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2 wow fadeIn text-center" data-wow-delay="0.1s" style="width: 75%; border-style: double; top: 0; left: 50%; transform: translate(-50%, -50%);">
+                        💝 Berbagi Kebahagiaan
                     </div>
-                    <form>
-                        <div class="row gx-4 gy-3">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-first-name" class="form-label text-dark">{{rsvp.fields.0.label}}</label>
-                                    <input type="text" class="form-control py-3 border-0" id="rsvp-first-name" placeholder="{{rsvp.fields.0.placeholder}}">
-                                  </div>
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-last-name" class="form-label text-dark">{{rsvp.fields.1.label}}</label>
-                                    <input type="text" class="form-control py-3 border-0" id="rsvp-last-name" placeholder="{{rsvp.fields.1.placeholder}}">
-                                  </div>
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-email" class="form-label text-dark">{{rsvp.fields.2.label}}</label>
-                                    <input type="email" class="form-control py-3 border-0" id="rsvp-email" placeholder="{{rsvp.fields.2.placeholder}}">
-                                  </div>
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-phone" class="form-label text-dark">{{rsvp.fields.3.label}}</label>
-                                    <input type="text" class="form-control py-3 border-0" id="rsvp-phone" placeholder="{{rsvp.fields.3.placeholder}}">
-                                  </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-guests" class="form-label text-dark">{{rsvp.fields.4.label}}</label>
-                                    <select class="form-control bg-white text-dark py-3 border-0" id="rsvp-guests" placeholder="{{rsvp.fields.4.placeholder}}">
-                                      <option>{{rsvp.fields.4.options.0}}</option>
-                                      <option>{{rsvp.fields.4.options.1}}</option>
-                                      <option>{{rsvp.fields.4.options.2}}</option>
-                                      <option>{{rsvp.fields.4.options.3}}</option>
-                                    </select>
+                    <p class="text-dark fs-5 text-center mt-4 mb-5 wow fadeIn" data-wow-delay="0.2s">
+                        Bagi keluarga dan sahabat yang ingin berbagi kasih serta doa terbaik, dapat mengirimkan hadiah pernikahan melalui rekening berikut.
+                    </p>
+                    <div class="row g-4 justify-content-center">
+                        <!-- BCA -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="border-secondary p-4 text-center" style="border-style: double;">
+                                <div class="mb-3">
+                                    <span class="badge bg-primary text-white fs-6 px-4 py-2 rounded-0">BCA</span>
                                 </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="form-group">
-                                    <label for="rsvp-message" class="form-label text-dark">{{rsvp.fields.5.label}}</label>
-                                    <textarea name="text" class="form-control border-0" id="rsvp-message" cols="30" rows="5" placeholder="{{rsvp.fields.5.placeholder}}"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="text-center border border-secondary p-4 my-4 position-relative">
-                                    <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2" style="width: 50%; border-style: double; top: 0; left: 50%; transform: translate(-50%, -50%);">
-                                        {{rsvp.attendanceQuestion}}
-                                    </div>
-                                    <div class="mt-4">
-                                        <div class="row g-4">
-                                            <div class="col-lg-6">
-                                                <div class="d-flex justify-content-center">
-                                                    <div class="form-check d-flex">
-                                                        <input class="form-check-input me-2" type="radio" name="rsvpAttendance" id="rsvp-accept">
-                                                        <label class="form-check-label text-dark" for="rsvp-accept">
-                                                            {{rsvp.attendanceOptions.0.label}}
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="d-flex justify-content-center">
-                                                    <div class="form-check d-flex">
-                                                        <input class="form-check-input me-2" type="radio" name="rsvpAttendance" id="rsvp-decline">
-                                                        <label class="form-check-label text-dark" for="rsvp-decline">
-                                                            {{rsvp.attendanceOptions.1.label}}
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center wow fadeIn" data-wow-delay="0.1s">
-                                <button class="btn btn-primary btn-primary-outline-0 py-3 px-5">{{rsvp.submitButton.label}}</button>
+                                <h3 class="text-dark mb-1">527 123 4567</h3>
+                                <p class="text-dark mb-3">a.n. Faldi Nur Rochim</p>
+                                <button class="btn btn-primary btn-primary-outline-0 py-2 px-4 copy-btn" data-account="5271234567">
+                                    <i class="fas fa-copy me-2"></i>Salin Nomor Rekening
+                                </button>
                             </div>
                         </div>
-                    </form>
+                        <!-- Mandiri -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="border-secondary p-4 text-center" style="border-style: double;">
+                                <div class="mb-3">
+                                    <span class="badge bg-primary text-white fs-6 px-4 py-2 rounded-0">Mandiri</span>
+                                </div>
+                                <h3 class="text-dark mb-1">123 00 4567890</h3>
+                                <p class="text-dark mb-3">a.n. Asti Dwi Liyana</p>
+                                <button class="btn btn-primary btn-primary-outline-0 py-2 px-4 copy-btn" data-account="123004567890">
+                                    <i class="fas fa-copy me-2"></i>Salin Nomor Rekening
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="text-dark fs-5 mb-0">Terima kasih atas doa dan kasih sayang yang diberikan.</p>
+                        <p class="text-dark fs-5">Semoga Allah SWT membalas kebaikan Bapak/Ibu/Saudara/i sekalian.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="mt-5">
-        <div class="row g-5 justify-content-center text-center">
-            <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="p-4 border-secondary" style="border-style: double;">
-                    <h4>{{infoCards.0.title}}</h4>
-                    <a href="tel:{{contact.phone}}" class="text-dark">{{infoCards.0.value}}</a>
+            <div class="row g-5 justify-content-center text-center">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-4 border-secondary" style="border-style: double;">
+                        <h4 class="text-dark">{{infoCards.0.title}}</h4>
+                        <p class="mb-0 text-dark">{{infoCards.0.value}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
-                <div class="p-4 border-secondary" style="border-style: double;">
-                    <h4>{{infoCards.1.title}}</h4>
-                    <p class="mb-0 text-dark">
-                        {{infoCards.1.value}}
-                    </p>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="p-4 border-secondary" style="border-style: double;">
+                        <h4 class="text-dark">{{infoCards.1.title}}</h4>
+                        <p class="mb-0 text-dark">{{infoCards.1.value}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                <div class="p-4 border-secondary" style="border-style: double;">
-                    <h4>{{infoCards.2.title}}</h4>
-                    <p class="mb-0 text-dark">
-                        {{infoCards.2.value}}
-                    </p>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-4 border-secondary" style="border-style: double;">
+                        <h4 class="text-dark">{{infoCards.2.title}}</h4>
+                        <p class="mb-0 text-dark">{{infoCards.2.value}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
-                <div class="border-secondary" style="border-style: double;">
-                    <iframe class="w-100"
-                    style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps?q=Monumen+Nasional+Jakarta+Indonesia&output=embed&z=15"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="border-secondary" style="border-style: double;">
+                        <iframe class="w-100"
+                        style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps?q=KUA+Cilacap+Utara+Jl.+Ketapang+Gumilir+Cilacap&output=embed&z=15"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </div>
-<!-- RSVP Form End -->
+<!-- Bank Account End -->
+
+<script>
+(function() {
+    // Copy to clipboard for bank account buttons
+    var btns = document.querySelectorAll('.copy-btn');
+    btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            var account = this.getAttribute('data-account');
+            var tempInput = document.createElement('input');
+            tempInput.value = account;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            try {
+                document.execCommand('copy');
+                var originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check me-2"></i>Tersalin!';
+                var self = this;
+                setTimeout(function() {
+                    self.innerHTML = originalText;
+                }, 2000);
+            } catch (err) {
+                console.error('Copy failed:', err);
+            }
+            document.body.removeChild(tempInput);
+        });
+    });
+})();
+</script>
