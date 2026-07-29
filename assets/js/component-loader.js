@@ -185,11 +185,59 @@
                 html = replacePlaceholders(html, el);
                 var wrapper = document.createElement('div');
                 wrapper.innerHTML = html;
+
+                // innerHTML does NOT execute <script> elements. Extract them so
+                // we can re-create and trigger execution after content insertion.
+                var deferredScripts = [];
+                var scriptNodes = wrapper.querySelectorAll('script');
+                scriptNodes.forEach(function(s) {
+                    deferredScripts.push({
+                        src: s.getAttribute('src') || '',
+                        text: s.textContent || ''
+                    });
+                    s.parentNode.removeChild(s);
+                });
+
+                // Insert non-script content into the DOM
                 var fragment = document.createDocumentFragment();
                 while (wrapper.firstChild) {
                     fragment.appendChild(wrapper.firstChild);
                 }
-                el.parentNode.replaceChild(fragment, el);
+                var parent = el.parentNode;
+                var ref = el.nextSibling;
+                parent.replaceChild(fragment, el);
+
+                // Re-create script elements so the browser executes them.
+                // External scripts load and execute sequentially in original
+                // order — each waits for onload before the next is inserted.
+                // Inline scripts execute synchronously upon insertion.
+                function insertNextScript(i) {
+                    if (i >= deferredScripts.length) {
+                        return Promise.resolve();
+                    }
+                    var s = deferredScripts[i];
+                    var newScript = document.createElement('script');
+                    if (s.src) {
+                        newScript.setAttribute('src', s.src);
+                    }
+                    if (s.text) {
+                        newScript.textContent = s.text;
+                    }
+                    parent.insertBefore(newScript, ref);
+
+                    if (s.src) {
+                        return new Promise(function(resolve) {
+                            newScript.onload = resolve;
+                            newScript.onerror = resolve;
+                        }).then(function() {
+                            return insertNextScript(i + 1);
+                        });
+                    }
+                    // Inline scripts execute synchronously on insertion
+                    return insertNextScript(i + 1);
+                }
+
+                return insertNextScript(0);
             }).catch(function(err) {
                 console.error('[Component Loader]', err.message);
             });
@@ -209,6 +257,11 @@
         // Phase 2: load & render components using config
         .then(function() {
             return processIncludes(document);
+        })
+        // Phase 2.5: notify that components are in the DOM
+        .then(function() {
+            console.log('componentsLoaded fired');
+            document.dispatchEvent(new Event('componentsLoaded'));
         })
         // Phase 3: init animation / lightbox libraries
         .then(function() {

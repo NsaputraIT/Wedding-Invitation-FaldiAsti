@@ -10,29 +10,31 @@
         <div class="wedding-date text-center bg-light p-5" style="border-style: double !important; border: 15px solid rgba(253, 93, 93, 0.5);">
             <div class="wedding-date-content">
                 <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
-                    <h4 class="text-dark text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">{{wedding.dateLong}}</h4>
+                    <h4 class="text-dark text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">Friday Pon, 14 August 2026</h4>
                 </div>
-                <h1 class="display-4">{{wedding.sectionTitle}}</h1>
-                <p class="text-dark fs-5">{{wedding.venue.full}}</p>
-                <div class="d-flex align-items-center justify-content-center mb-5">
+                <h1 class="display-4">Walimatul 'Urs</h1>
+                <p class="text-dark fs-5">📍 Akad Nikah: KUA Cilacap Utara, Jl. Ketapang, Gumilir<br>📍 Tasyakuran: Jln. Jati RT 03 RW 08, Karangtalun, Cilacap Utara</p>
+                <div class="d-flex align-items-center justify-content-center mb-5" id="wedding-countdown">
                     <div class="text-dark fs-2 me-4">
-                        <div>00</div>
-                        <span>{{wedding.countdownLabels.days}}</span>
+                        <div id="countdown-days">00</div>
+                        <span>Hari</span>
                     </div>
                     <div class="text-dark fs-2 me-4">
-                        <div>00</div>
-                        <span>{{wedding.countdownLabels.hours}}</span>
+                        <div id="countdown-hours">00</div>
+                        <span>Jam</span>
                     </div>
                     <div class="text-dark fs-2 me-4">
-                        <div>00</div>
-                        <span>{{wedding.countdownLabels.mins}}</span>
+                        <div id="countdown-mins">00</div>
+                        <span>Menit</span>
                     </div>
                     <div class="text-dark fs-2 me-0">
-                        <div>00</div>
-                        <span>{{wedding.countdownLabels.secs}}</span>
+                        <div id="countdown-secs">00</div>
+                        <span>Detik</span>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="{{wedding.ctaButton.href}}">{{wedding.ctaButton.label}}</a>
+                <div id="wedding-day-message" class="text-dark fs-3 fw-bold mb-5" style="display: none;">
+                    🎉 Acara Dilangsungkan Hari Ini Jam 09.00 WIB
+                </div>
             </div>
             <div class="position-absolute" style="top: 15%; right: -30px; transform: rotate(320deg); opacity: 0.5; z-index: 1;">
                 <img src="assets/img/attendance-bg.png" class="img-fluid" alt="">
@@ -44,3 +46,4 @@
     </div>
 </div>
 <!-- Wedding Date -->
+</tool_result>

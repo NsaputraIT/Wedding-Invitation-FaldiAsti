@@ -1,3 +1,4 @@
+console.log('main.js loaded');
 (function ($) {
     "use strict";
 
@@ -92,4 +93,51 @@
     }); 
 
 })(jQuery);
+
+// Wedding countdown — polls until the countdown elements exist, then starts
+function startCountdown() {
+    console.log('countdown initialized');
+    var targetDate = new Date(2026, 7, 14, 0, 0, 0);
+
+    function updateCountdown() {
+        var now = new Date();
+        var diff = targetDate - now;
+        var countdownEl = document.getElementById("wedding-countdown");
+        var messageEl = document.getElementById("wedding-day-message");
+
+        // On the wedding day or after, hide countdown and show message
+        if (now.toDateString() === targetDate.toDateString() || now > targetDate) {
+            if (countdownEl) countdownEl.style.display = "none";
+            if (messageEl) messageEl.style.display = "block";
+            return;
+        }
+
+        if (diff <= 0) {
+            if (countdownEl) countdownEl.style.display = "none";
+            if (messageEl) messageEl.style.display = "block";
+            return;
+        }
+
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown-days").textContent = String(days).padStart(2, "0");
+        document.getElementById("countdown-hours").textContent = String(hours).padStart(2, "0");
+        document.getElementById("countdown-mins").textContent = String(mins).padStart(2, "0");
+        document.getElementById("countdown-secs").textContent = String(secs).padStart(2, "0");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+
+(function pollCountdown() {
+    if (document.getElementById('countdown-days')) {
+        startCountdown();
+    } else {
+        setTimeout(pollCountdown, 100);
+    }
+})();
 

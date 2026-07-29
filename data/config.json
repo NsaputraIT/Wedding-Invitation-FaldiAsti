@@ -65,14 +65,14 @@
       "fullName": "Asti Dwi Liyana",
       "description": "Putri Bpk Ratno & Ibu Yugi Purwati (Almh), Karangtalun, Cilacap Utara.",
       "shortDescription": "Putri Bpk Ratno & Ibu Yugi Purwati (Almh), Karangtalun, Cilacap Utara.",
-      "image": "assets/img/bride.jpg"
+      "image": "assets/img/singgle-foto_Asti.jpeg"
     },
     "groom": {
       "firstName": "Faldi Nur Rochim",
       "fullName": "Faldi Nur Rochim",
       "description": "Putra Bpk Samingun & Ibu Mistem, Genting, Adipala.",
       "shortDescription": "Putra Bpk Samingun & Ibu Mistem, Genting, Adipala.",
-      "image": "assets/img/Groom.jpg"
+      "image": "assets/img/singgle-foto_Faldi.jpeg"
     }
   },
 
@@ -85,7 +85,7 @@
     "title": "Assalamualaikum WR. WB.",
     "tagline": "Dengan segala hormat dan kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk memberikan doa restu serta menghadiri acara Walimatul 'Urs putra-putri kami.",
     "description": "Kami mengundang Bapak/Ibu/Saudara/i untuk memberikan doa restu serta menghadiri acara Walimatul 'Urs putra-putri kami yang Insya Allah akan diselenggarakan pada:",
-    "image": "assets/img/about-1.jpg",
+    "image": "assets/img/foto-about-FaldiAsti.jpeg",
     "decorativeImage": "assets/img/bg-flower.png",
     "ctaButton": {
       "label": "Read More",

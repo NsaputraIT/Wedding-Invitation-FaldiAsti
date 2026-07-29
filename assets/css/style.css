@@ -122,6 +122,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .img-border {
     border-color: var(--bs-secondary);
     border-style: double;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .display-1,
@@ -279,7 +282,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
     bottom: -7px;
 }
 
-.story .story-timeline .row::after {
+/* .story .story-timeline .row::after {
     position: absolute;
     content: "\f004";
     font-family: "Font Awesome 5 Free";
@@ -289,7 +292,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 @media (max-width: 768px) {
     .story .story-timeline::before,
